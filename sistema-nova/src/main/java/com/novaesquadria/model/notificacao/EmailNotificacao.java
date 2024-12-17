@@ -1,4 +1,4 @@
-package main.java.com.novaesquadria.estoque.notificacao;
+package main.java.com.novaesquadria.model.notificacao;
 
 public class EmailNotificacao implements Notificacao {
     @Override

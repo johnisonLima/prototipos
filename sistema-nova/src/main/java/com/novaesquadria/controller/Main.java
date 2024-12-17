@@ -1,9 +1,10 @@
-package main.java.com.novaesquadria.estoque;
+package  main.java.com.novaesquadria.controller;
 
-import main.java.com.novaesquadria.estoque.notificacao.Notificacao;
-import main.java.com.novaesquadria.estoque.notificacao.NotificacaoFactory;
-import main.java.com.novaesquadria.estoque.observer.NotificacaoService;
-import main.java.com.novaesquadria.estoque.observer.PedidoFornecedorService;
+import main.java.com.novaesquadria.model.Estoque;
+import main.java.com.novaesquadria.model.notificacao.Notificacao;
+import main.java.com.novaesquadria.model.notificacao.NotificacaoFactory;
+import main.java.com.novaesquadria.model.observer.NotificacaoService;
+import main.java.com.novaesquadria.model.observer.PedidoFornecedorService;
 
 public class Main {
     public static void main(String[] args) throws Exception {

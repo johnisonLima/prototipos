@@ -1,6 +1,6 @@
-package main.java.com.novaesquadria.estoque.observer;
+package main.java.com.novaesquadria.model.observer;
 
-import main.java.com.novaesquadria.estoque.Estoque;
+import main.java.com.novaesquadria.model.Estoque;
 
 public interface Observer {
     void atualizar(Estoque estoque);

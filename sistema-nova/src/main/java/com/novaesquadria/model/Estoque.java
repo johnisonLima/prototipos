@@ -1,9 +1,9 @@
-package main.java.com.novaesquadria.estoque;
+package main.java.com.novaesquadria.model;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import main.java.com.novaesquadria.estoque.observer.Observer;
+import main.java.com.novaesquadria.model.observer.Observer;
 
 public class Estoque {
     private int quantidade; // Nível atual do estoque
