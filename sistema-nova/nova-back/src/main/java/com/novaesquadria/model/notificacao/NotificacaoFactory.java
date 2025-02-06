@@ -1,4 +1,4 @@
-package main.java.com.novaesquadria.model.notificacao;
+package com.novaesquadria.model.notificacao;
 
 public class NotificacaoFactory {
     public static Notificacao criarNotificacao(String tipo) {
@@ -15,7 +15,7 @@ public class NotificacaoFactory {
 
 Aqui está uma descrição detalhada:
 
-Pacote: O código está no pacote main.java.com.novaesquadria.estoque.notificacao.
+Pacote: O código está no pacotecom.novaesquadria.estoque.notificacao.
 Classe: A classe NotificacaoFactory é uma fábrica de notificações.
 Método criarNotificacao:
 É um método estático que recebe uma string tipo.

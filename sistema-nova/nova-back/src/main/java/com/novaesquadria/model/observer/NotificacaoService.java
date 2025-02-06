@@ -1,8 +1,8 @@
-package main.java.com.novaesquadria.model.observer;
+package com.novaesquadria.model.observer;
 
 
-import main.java.com.novaesquadria.model.Estoque;
-import main.java.com.novaesquadria.model.notificacao.Notificacao;
+import com.novaesquadria.model.Estoque;
+import com.novaesquadria.model.notificacao.Notificacao;
 
 public class NotificacaoService implements Observer {
     private final Notificacao notificacao;
@@ -24,7 +24,7 @@ public class NotificacaoService implements Observer {
 
 Pacote e Importações:
 
-O código está no pacote main.java.com.novaesquadria.estoque.observer.
+O código está no pacotecom.novaesquadria.estoque.observer.
 Importa as classes Estoque e Notificacao.
 Classe NotificacaoService:
 

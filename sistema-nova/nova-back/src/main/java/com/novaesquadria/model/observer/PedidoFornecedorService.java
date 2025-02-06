@@ -1,6 +1,6 @@
-package main.java.com.novaesquadria.model.observer;
+package com.novaesquadria.model.observer;
 
-import main.java.com.novaesquadria.model.Estoque;
+import com.novaesquadria.model.Estoque;
 
 public class PedidoFornecedorService implements Observer {
     @Override
@@ -19,8 +19,8 @@ Aqui está uma descrição detalhada:
 
 Pacote e Importações:
 
-O código está no pacote main.java.com.novaesquadria.estoque.observer.
-Importa a classe Estoque do pacote main.java.com.novaesquadria.estoque.
+O código está no pacotecom.novaesquadria.estoque.observer.
+Importa a classe Estoque do pacotecom.novaesquadria.estoque.
 Classe PedidoFornecedorService:
 
 Implementa a interface Observer.
