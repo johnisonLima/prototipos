@@ -1,38 +1,35 @@
 package com.novaesquadria.controller;
 
-import com.novaesquadria.model.Estoque;
-import com.novaesquadria.model.notificacao.Notificacao;
-import com.novaesquadria.model.notificacao.NotificacaoFactory;
-import com.novaesquadria.model.observer.NotificacaoService;
-import com.novaesquadria.model.observer.PedidoFornecedorService;
+import com.novaesquadria.model.entity.Estoque;
+import com.novaesquadria.model.service.EstoqueService;
+
+import java.util.Optional;
+
 import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/estoque")
 public class EstoqueController {
 
-    private final Estoque estoque;
+    private final EstoqueService estoqueService;
 
-    public EstoqueController() {
-        // Inicializa o estoque
-        this.estoque = new Estoque(15);
+    public EstoqueController(EstoqueService estoqueService) {
+        this.estoqueService = estoqueService;
 
-        // Configura observadores
-        Notificacao emailNotificacao = NotificacaoFactory.criarNotificacao("email");
-        NotificacaoService notificacaoService = new NotificacaoService(emailNotificacao);
-        PedidoFornecedorService fornecedorService = new PedidoFornecedorService();
+    }
 
-        estoque.adicionarObservador(notificacaoService);
-        estoque.adicionarObservador(fornecedorService);
+    @GetMapping("/lista")
+    public Iterable<Estoque> listaEstoque() {
+        return estoqueService.listaEstoque();
     }
 
     @GetMapping("/quantidade")
-    public int getQuantidade() {
-        return estoque.getQuantidade();
+    public Optional<Estoque> getQuantidade(@RequestParam Long produtoId) {
+        return estoqueService.getEstoqueByProdutoId(produtoId);
     }
 
     @PostMapping("/alterar")
-    public void alterarQuantidade(@RequestParam int novaQuantidade) {
-        estoque.alterarQuantidade(novaQuantidade);
+    public void alterarQuantidade(@RequestParam int novaQuantidade, @RequestParam Long produtoId) {
+        estoqueService.alterarQuantidade(produtoId, novaQuantidade);
     }
 }
