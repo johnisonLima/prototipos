@@ -1,0 +1,7 @@
+{
+    "java.project.sourcePaths": [
+        "nova-back/src",
+        "prototipo_estoque/src/main/java/com/nova_esquadria/prototipo_estoque"
+    ],
+    "java.compile.nullAnalysis.mode": "automatic"
+}

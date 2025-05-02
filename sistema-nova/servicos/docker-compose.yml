@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql-prototipo
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: prototipo_estoque
+      MYSQL_USER: prototipo_user
+      MYSQL_PASSWORD: prototipo_password
+    ports:
+      - "3306:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - prototipo_network
+
+volumes:
+  db_data:
+
+networks:
+  prototipo_network:
