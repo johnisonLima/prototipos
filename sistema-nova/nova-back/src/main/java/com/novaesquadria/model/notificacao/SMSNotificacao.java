@@ -1,4 +1,4 @@
-package main.java.com.novaesquadria.model.notificacao;
+package com.novaesquadria.model.notificacao;
 
 public class SMSNotificacao implements Notificacao {
     @Override
@@ -12,7 +12,7 @@ public class SMSNotificacao implements Notificacao {
 
 Aqui está uma descrição detalhada:
 
-A classe SMSNotificacao está no pacote main.java.com.novaesquadria.estoque.notificacao.
+A classe SMSNotificacao está no pacotecom.novaesquadria.estoque.notificacao.
 A classe implementa a interface Notificacao.
 O método enviar é sobrescrito para imprimir uma mensagem no console.
 Este método simula o envio de uma notificação via SMS, mas na verdade apenas imprime a mensagem no console.
